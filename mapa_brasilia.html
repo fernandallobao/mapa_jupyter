@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1d96bc0236055642b6e77a9dbf8aabca {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1d96bc0236055642b6e77a9dbf8aabca" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1d96bc0236055642b6e77a9dbf8aabca = L.map(
+                "map_1d96bc0236055642b6e77a9dbf8aabca",
+                {
+                    center: [-15.8267, -47.9218],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_af6864579eb7957bab67039703689f84 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_af6864579eb7957bab67039703689f84.addTo(map_1d96bc0236055642b6e77a9dbf8aabca);
+        
+    
+            var marker_797e8b6de927421959add1e12005db1c = L.marker(
+                [-15.7998, -47.8645],
+                {}
+            ).addTo(map_1d96bc0236055642b6e77a9dbf8aabca);
+        
+    
+            var icon_3f6625684ed6f60af09864aac1f21760 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_797e8b6de927421959add1e12005db1c.setIcon(icon_3f6625684ed6f60af09864aac1f21760);
+        
+    
+        var popup_dd0217423efcb9335f9a912c2fe7e07f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4b863934bf7fc73ed1f4b6f6677b3d5 = $(`<div id="html_f4b863934bf7fc73ed1f4b6f6677b3d5" style="width: 100.0%; height: 100.0%;">Congresso Nacional</div>`)[0];
+                popup_dd0217423efcb9335f9a912c2fe7e07f.setContent(html_f4b863934bf7fc73ed1f4b6f6677b3d5);
+            
+        
+
+        marker_797e8b6de927421959add1e12005db1c.bindPopup(popup_dd0217423efcb9335f9a912c2fe7e07f)
+        ;
+
+        
+    
+    
+            var marker_d33bc1c8ca26597770fafc770142cc7c = L.marker(
+                [-15.7983, -47.8758],
+                {}
+            ).addTo(map_1d96bc0236055642b6e77a9dbf8aabca);
+        
+    
+            var icon_bc8dd44106021f548b5b85389f1224f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d33bc1c8ca26597770fafc770142cc7c.setIcon(icon_bc8dd44106021f548b5b85389f1224f2);
+        
+    
+        var popup_04c9861b1686a640ab6ee2f16ec13962 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed7224d4fc3e4a9bec284f4e57c5d41f = $(`<div id="html_ed7224d4fc3e4a9bec284f4e57c5d41f" style="width: 100.0%; height: 100.0%;">Catedral de Brasília</div>`)[0];
+                popup_04c9861b1686a640ab6ee2f16ec13962.setContent(html_ed7224d4fc3e4a9bec284f4e57c5d41f);
+            
+        
+
+        marker_d33bc1c8ca26597770fafc770142cc7c.bindPopup(popup_04c9861b1686a640ab6ee2f16ec13962)
+        ;
+
+        
+    
+    
+            var circle_946ae44b3bc9ac16625a3886446604bf = L.circle(
+                [-15.8009, -47.8619],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
+            ).addTo(map_1d96bc0236055642b6e77a9dbf8aabca);
+        
+    
+        var popup_56dcc269eff304ebec843fb29c05b7d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01ce38be82c621df77a1b3ca69644752 = $(`<div id="html_01ce38be82c621df77a1b3ca69644752" style="width: 100.0%; height: 100.0%;">Praça dos Três Poderes</div>`)[0];
+                popup_56dcc269eff304ebec843fb29c05b7d2.setContent(html_01ce38be82c621df77a1b3ca69644752);
+            
+        
+
+        circle_946ae44b3bc9ac16625a3886446604bf.bindPopup(popup_56dcc269eff304ebec843fb29c05b7d2)
+        ;
+
+        
+    
+    
+            var tile_layer_5123e7835aa5cb1f2758ea3c586aea93 = L.tileLayer(
+                "Stamen Toner",
+                {"attribution": "Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_5123e7835aa5cb1f2758ea3c586aea93.addTo(map_1d96bc0236055642b6e77a9dbf8aabca);
+        
+    
+            var tile_layer_8cd073dc56151dbdc29715f84c253b7a = L.tileLayer(
+                "Stamen Terrain",
+                {"attribution": "Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8cd073dc56151dbdc29715f84c253b7a.addTo(map_1d96bc0236055642b6e77a9dbf8aabca);
+        
+    
+            var tile_layer_539631ddfacabf610c0f2028acf8a96e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "Map tiles by CartoDB, under CC BY 3.0. Data by OpenStreetMap, under ODbL.", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_539631ddfacabf610c0f2028acf8a96e.addTo(map_1d96bc0236055642b6e77a9dbf8aabca);
+        
+    
+            var layer_control_023e115ed87ced304e7057ba51a03f25_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_af6864579eb7957bab67039703689f84,
+                    "stamentoner" : tile_layer_5123e7835aa5cb1f2758ea3c586aea93,
+                    "stamenterrain" : tile_layer_8cd073dc56151dbdc29715f84c253b7a,
+                    "cartodbpositron" : tile_layer_539631ddfacabf610c0f2028acf8a96e,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_023e115ed87ced304e7057ba51a03f25 = L.control.layers(
+                layer_control_023e115ed87ced304e7057ba51a03f25_layers.base_layers,
+                layer_control_023e115ed87ced304e7057ba51a03f25_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_1d96bc0236055642b6e77a9dbf8aabca);
+
+        
+</script>
+</html>
